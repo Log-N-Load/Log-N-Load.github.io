@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Log n' load</title>
+    <link rel="stylesheet" href="../../assets/css/styles.css">
+    <link rel="icon" href="favicon.ico">
+  </head>
+  <body>
+    <nav>
+      <ul>
+        <li><a href="seguridad-industrial.html">Seguridad Industrial</a></li>
+        <li><a href="seguridad-web.html">Seguridad Web</a></li>
+        <li><a href="informatica-forense.html">Informatica Forense</a></li>
+        <li><a href="#">Redes</a></li>
+        <li><a href="#">Programación</a></li>
+      </ul>
+    </nav>
+    <div class="content-container">
+        <h3 id="-os-information-">
+            <em>OS Information</em>
+          </h3>
+          <h4 id="-imageinfo-">
+            <em>imageinfo</em>
+          </h4>
+          <p>
+            <em>vol.py -f “/path/to/file” windows.info</em>
+          </p>
+          <h3 id="-process-information-">
+            <em>Process Information</em>
+          </h3>
+          <h4 id="-pslist-">
+            <em>pslist</em>
+          </h4>
+          <p>
+            <em>vol.py -f “/path/to/file” windows.pslist</em>
+            <br>
+            <em>vol.py -f “/path/to/file” windows.psscan</em>
+            <br>
+            <em>vol.py -f “/path/to/file” windows.pstree</em>
+          </p>
+          <h4 id="-procdump-">
+            <em>procdump</em>
+          </h4>
+          <p>
+            <em>vol.py -f “/path/to/file” -o “/path/to/dir” windows.dumpfiles ‑‑pid \ <PID\>
+            </em>
+          </p>
+          <h4 id="-memdump-">
+            <em>memdump</em>
+          </h4>
+          <p>
+            <em>vol.py -f “/path/to/file” -o “/path/to/dir” windows.memmap ‑‑dump ‑‑pid \ <PID\>
+            </em>
+          </p>
+          <h4 id="-handles-">
+            <em>handles</em>
+          </h4>
+          <p>
+            <em>vol.py -f “/path/to/file” windows.handles ‑‑pid \ <PID\>
+            </em>
+          </p>
+          <h4 id="-dlls-">
+            <em>dlls</em>
+          </h4>
+          <p>
+            <em>vol.py -f “/path/to/file” windows.dlllist ‑‑pid \ <PID\>
+            </em>
+          </p>
+          <h4 id="-cmdline-">
+            <em>cmdline</em>
+          </h4>
+          <p>
+            <em>vol.py -f “/path/to/file” windows.cmdline</em>
+          </p>
+          <h3 id="-network-information-">
+            <em>Network Information</em>
+          </h3>
+          <h4 id="-netscan-">
+            <em>netscan</em>
+          </h4>
+          <p>
+            <em>vol.py -f “/path/to/file” windows.netscan</em>
+            <br>
+            <em>vol.py -f “/path/to/file” windows.netstat</em>
+          </p>
+          <h3 id="-registry-">
+            <em>Registry</em>
+          </h3>
+          <h4 id="-hivelist-">
+            <em>hivelist</em>
+          </h4>
+          <p>
+            <em>vol.py -f “/path/to/file” windows.registry.hivescan</em>
+            <br>
+            <em>vol.py -f “/path/to/file” windows.registry.hivelist</em>
+          </p>
+          <h4 id="-printkey-">
+            <em>printkey</em>
+          </h4>
+          <p>
+            <em>vol.py -f “/path/to/file” windows.registry.printkey</em>
+            <br>
+            <em>vol.py -f “/path/to/file” windows.registry.printkey ‑‑key “Software\Microsoft\Windows\CurrentVersion”</em>
+          </p>
+          <h3 id="-files-">
+            <em>files</em>
+          </h3>
+          <h4 id="-filescan-">
+            <em>filescan</em>
+          </h4>
+          <p>
+            <em>vol.py -f “/path/to/file” windows.filescan</em>
+          </p>
+          <h4 id="-filedump-">
+            <em>filedump</em>
+          </h4>
+          <p>
+            <em>vol.py -f “/path/to/file” -o “/path/to/dir” windows.dumpfiles</em>
+            <br>
+            <em>vol.py -f “/path/to/file” -o “/path/to/dir” windows.dumpfiles ‑‑virtaddr \ <offset\>
+            </em>
+            <br>
+            <em>vol.py -f “/path/to/file” -o “/path/to/dir” windows.dumpfiles ‑‑physaddr \ <offset\>
+            </em>
+          </p>
+          <h3 id="-miscellaneous-">
+            <em>Miscellaneous</em>
+          </h3>
+          <h4 id="-malfind-">
+            <em>malfind</em>
+          </h4>
+          <p>
+            <em>vol.py -f “/path/to/file” windows.malfind</em>
+          </p>
+          <h4 id="-yarascan-">
+            <em>yarascan</em>
+          </h4>
+          <p>
+            <em>vol.py -f “/path/to/file” windows.vadyarascan ‑‑yara-rules \ <string\>
+            </em>
+            <br>
+            <em>vol.py -f “/path/to/file” windows.vadyarascan ‑‑yara-file “/path/to/file.yar”</em>
+            <br>
+            <em>vol.py -f “/path/to/file” yarascan.yarascan ‑‑yara-file “/path/to/file.yar”</em>
+          </p>
+    </div>
+  </body>
+</html>
